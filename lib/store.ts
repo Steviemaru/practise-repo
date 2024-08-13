@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from './features/counter/counterSlice'
 import NavButtonsReducer from './features/navbutton/navbuttonSlice'
+import CurrencySelectorReducer  from './features/currencySelector/currencySelectorSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
+      currencySelector: CurrencySelectorReducer,
       counter: counterReducer,
       NavButtons: NavButtonsReducer 
     },

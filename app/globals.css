@@ -7,3 +7,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+  background-image: linear-gradient(to right, rgba(123, 22, 78, 1) , rgba(89, 59, 150, 1),rgba(50, 90, 107, 1));
+}
